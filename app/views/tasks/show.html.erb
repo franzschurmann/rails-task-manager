@@ -1,0 +1,5 @@
+<h1><%= @task.title %></h1>
+<p>Task description: <%= @task.details %> <br>(<%= "X" if @task.completed == true %>) <br>
+</p>
+<p><%= link_to "Go Back", :back %></p>
+<p><%= link_to "Edit this task", "#{@task[:id]}/edit" %></p>
